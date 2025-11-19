@@ -19,8 +19,8 @@ Resolver Questões de Negócio: Responder a perguntas específicas de negócio p
 | `customer_id` | INT | Identificador do cliente que realizou a compra. |
 | `gender` | VARCHAR(15) | Gênero do cliente. |
 | `age` | INT | Idade do cliente. |
-| `category` | VARCHAR(15) | Categoria do produto vendido (e.g., 'Clothing', 'Beauty'). |
+| `category` | VARCHAR(15) | Categoria do produto vendido. |
 | `quantity` | INT | Número de unidades vendidas na transação. |
 | `price_per_unit` | FLOAT | Preço de venda por unidade do produto. |
-| `cogs` | FLOAT | Custo dos Bens Vendidos (*Cost of Goods Sold*). |
-| `total_sale` | FLOAT | Valor total da venda (`quantity` * `price_per_unit`). |
+| `cogs` | FLOAT | Custo dos Bens Vendidos. |
+| `total_sale` | FLOAT | Valor total da venda. |
