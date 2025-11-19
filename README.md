@@ -11,7 +11,8 @@ Explorar os Dados (EDA): Entender a estrutura do conjunto de dados, o número de
 
 Resolver Questões de Negócio: Responder a perguntas específicas de negócio por meio de consultas SQL complexas, como agregação, window functions e CTEs (Common Table Expressions).
 
-## 🛠️ Tecnologias Utilizadas
-Linguagem: SQL (com consultas testadas em um ambiente que suporta funções como EXTRACT, TO_CHAR, RANK() OVER()).
-
-Banco de Dados: Simulação de um banco de dados de varejo (por exemplo, PostgreSQL ou MySQL).
+| Ferramenta | Descrição | Status |
+| :--- | :--- | :---: |
+| SQL | Análise e consultas de dados | Concluído |
+| Python | Extração e limpeza (Não utilizado) | Pendente |
+| Tableau | Visualização de resultados | Pendente |
