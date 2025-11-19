@@ -1,1 +1,1 @@
-# SQL-Project_Rentail_Sales
+# 📊 Projeto de Análise de Vendas (Retail Sales Analysis)
