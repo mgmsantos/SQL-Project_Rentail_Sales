@@ -10,3 +10,8 @@ Limpar e Preparar os Dados: Garantir a integridade dos dados, identificando e tr
 Explorar os Dados (EDA): Entender a estrutura do conjunto de dados, o número de transações, clientes e categorias de produtos.
 
 Resolver Questões de Negócio: Responder a perguntas específicas de negócio por meio de consultas SQL complexas, como agregação, window functions e CTEs (Common Table Expressions).
+
+## 🛠️ Tecnologias Utilizadas
+Linguagem: SQL (com consultas testadas em um ambiente que suporta funções como EXTRACT, TO_CHAR, RANK() OVER()).
+
+Banco de Dados: Simulação de um banco de dados de varejo (por exemplo, PostgreSQL ou MySQL).
