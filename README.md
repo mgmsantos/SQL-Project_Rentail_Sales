@@ -11,6 +11,8 @@ Explorar os Dados (EDA): Entender a estrutura do conjunto de dados, o número de
 
 Resolver Questões de Negócio: Responder a perguntas específicas de negócio por meio de consultas SQL complexas, como agregação, window functions e CTEs (Common Table Expressions).
 
+## 📂 Estrutura do Conjunto de Dados
+O conjunto de dados retail_sales contém informações detalhadas sobre cada transação de venda. A tabela foi criada com a seguinte estrutura:
 | Coluna | Tipo de Dado | Descrição |
 | :--- | :--- | :--- |
 | **`transaction_id`** | INT | **Chave Primária**. Identificador único da transação. |
