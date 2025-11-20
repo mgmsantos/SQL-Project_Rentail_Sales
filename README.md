@@ -74,4 +74,23 @@ WHERE
 ### 3. Análise de dados e resultados
 Foram definidas 10 perguntas específicas de negócios, visando extrair insights acerca dos dados:
 
-- 01. Qual o número de transações realizadas no dia 24/11/2022 (Véspera de Natal) ?
+- 1. Qual o número de transações realizadas no dia 24/11/2022 (Véspera de Natal) ?
+ 
+- 2. Quantas transações foram da categória 'Vestuário' e com quantidade maior que 4 na véspera de natal ?
+     
+- 3. Durante todo o período, qual foi o total de transações de cada categoria ?
+     
+- 4. Qual a idade média dos clientes que compram produtos da categoria 'Beleza' ?
+     
+- 5. Qauis transações tiveram um valor total de venda maior que $ 1000?
+     
+- 6. Quantas transações foram feitas por clientes do gênero masculino ? E feminino ?
+     
+- 7. Qual a média de vendas de cada mês ? Qual mês houve o maior número de vendas em cada ano ?
+     
+- 8. Quais os 5 clientes que possuem o maior volume total de vendas ?
+     
+- 9. Quantos clientes únicos compraram itens de cada categoria ?
+      
+- 10. Qual o total de transações em cada turno do dia ?
+  
