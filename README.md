@@ -28,7 +28,7 @@ O conjunto de dados retail_sales contém informações detalhadas sobre cada tra
 | `total_sale` | FLOAT | Valor total da venda. |
 
 Código para construção do conjunto de dados:
-```
+```sql
 CREATE DATABASE p1_retail_db;
 
 CREATE TABLE retail_sales
