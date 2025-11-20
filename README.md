@@ -74,7 +74,7 @@ WHERE
 ### 3. Análise de dados e resultados
 Foram definidas 10 perguntas específicas de negócios, visando extrair insights acerca dos dados:
 
-- 1. Recuperar as transações realizadas no dia 24/11/2022 (Véspera de Natal) ?
+- Recuperar as transações realizadas no dia 24/11/2022 (Véspera de Natal) ?
 
 ```sql
 SELECT *
@@ -82,21 +82,115 @@ FROM retail_sales
 WHERE sale_date = '2022-12-24';
 ```
  
-- 2. Quantas transações foram da categória 'Vestuário' e com quantidade maior que 4 na véspera de natal ?
+- Recuperar as transações que foram da categória 'Vestuário' na véspera de natal ?
+
+```sql
+SELECT *
+FROM retail_sales
+WHERE 
+	category = 'Clothing' AND
+	TO_CHAR(sale_date, 'YYYY-MM') = '2022-11';
+```
      
-- 3. Durante todo o período, qual foi o total de transações de cada categoria ?
+- Durante todo o período, qual foi o total de vendas e transações para cada categoria ?
+
+```sql
+SELECT
+	category,
+	SUM(total_sale) AS total_sale,
+	COUNT(*) AS total_order
+FROM retail_sales
+GROUP BY category;
+```
+
+- Qual a idade média dos clientes que compram produtos da categoria 'Beleza' ?
+
+```sql
+SELECT
+	ROUND(AVG(age), 2) AS avg_age
+FROM retail_sales
+WHERE category = 'Beauty';
+```
      
-- 4. Qual a idade média dos clientes que compram produtos da categoria 'Beleza' ?
+- Quais transações tiveram um valor total de venda maior que $ 1000?
+
+```sql
+SELECT *
+FROM retail_sales
+WHERE total_sale > 1000;
+```
      
-- 5. Qauis transações tiveram um valor total de venda maior que $ 1000?
+- Quantas transações foram feitas por clientes do gênero masculino ? E feminino ?
+
+```sql
+SELECT
+	gender,
+	category,
+	COUNT(*) AS total_transaction
+FROM retail_sales
+GROUP BY gender, category
+ORDER BY category;
+```
      
-- 6. Quantas transações foram feitas por clientes do gênero masculino ? E feminino ?
+- Qual a média de vendas de cada mês ? Qual mês houve o maior número de vendas em cada ano ?
+
+```sql
+SELECT
+	year,
+	month,
+	avg_sale
+FROM
+(
+	SELECT
+		EXTRACT(YEAR FROM sale_date) AS year,
+		EXTRACT(MONTH FROM sale_date) AS month,
+		AVG(total_sale) AS avg_sale,
+		RANK() OVER(PARTITION BY EXTRACT(YEAR FROM sale_date) ORDER BY AVG(total_sale) DESC) AS rank
+	FROM retail_sales
+	GROUP BY 1, 2
+) AS t1
+WHERE rank = 1;
+```
      
-- 7. Qual a média de vendas de cada mês ? Qual mês houve o maior número de vendas em cada ano ?
+- Quais os 5 clientes que possuem o maior volume total de vendas ?
+
+```sql
+SELECT
+	customer_id,
+	SUM(total_sale) AS total_sale
+FROM retail_sales
+GROUP BY 1
+ORDER BY 2 DESC
+LIMIT 5;
+```
      
-- 8. Quais os 5 clientes que possuem o maior volume total de vendas ?
-     
-- 9. Quantos clientes únicos compraram itens de cada categoria ?
+- Quantos clientes únicos compraram itens de cada categoria ?
+
+```sql
+SELECT
+	category,
+	COUNT(DISTINCT customer_id) AS customer
+FROM retail_sales
+GROUP BY category;
+```
       
-- 10. Qual o total de transações em cada turno do dia ?
+- Qual o total de transações em cada turno do dia ?
+
+```sql
+WITH hourly_sales AS
+(
+	SELECT *,
+		CASE
+			WHEN EXTRACT(HOUR FROM sale_time) < 12 THEN 'Morning'
+			WHEN EXTRACT(HOUR FROM sale_time) BETWEEN 12 AND 17 THEN 'Afternoon'
+			ELSE 'Evening'
+		END AS shift
+	FROM retail_sales
+)
+SELECT
+	shift,
+	COUNT(transaction_id)
+FROM hourly_sales
+GROUP BY shift;
+```
   
