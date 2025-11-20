@@ -26,3 +26,23 @@ O conjunto de dados retail_sales contém informações detalhadas sobre cada tra
 | `price_per_unit` | FLOAT | Preço de venda por unidade do produto. |
 | `cogs` | FLOAT | Custo dos Bens Vendidos. |
 | `total_sale` | FLOAT | Valor total da venda. |
+
+Código para construção do conjunto de dados:
+'''
+CREATE DATABASE p1_retail_db;
+
+CREATE TABLE retail_sales
+(
+    transactions_id INT PRIMARY KEY,
+    sale_date DATE,	
+    sale_time TIME,
+    customer_id INT,	
+    gender VARCHAR(10),
+    age INT,
+    category VARCHAR(35),
+    quantity INT,
+    price_per_unit FLOAT,	
+    cogs FLOAT,
+    total_sale FLOAT
+);
+'''
