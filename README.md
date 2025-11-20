@@ -74,7 +74,7 @@ WHERE
 ### 3. Análise de dados e resultados
 Foram definidas 10 perguntas específicas de negócios, visando extrair insights acerca dos dados:
 
-- Recuperar as transações realizadas no dia 24/11/2022 (Véspera de Natal) ?
+- Quais transações foram realizadas no dia 24/11/2022 (Véspera de Natal) ?
 
 ```sql
 SELECT *
@@ -82,7 +82,7 @@ FROM retail_sales
 WHERE sale_date = '2022-12-24';
 ```
  
-- Recuperar as transações que foram da categória 'Vestuário' na véspera de natal ?
+- Quais transações foram da categória 'Vestuário' na véspera de natal ?
 
 ```sql
 SELECT *
