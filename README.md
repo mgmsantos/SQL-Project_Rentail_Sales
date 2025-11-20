@@ -71,3 +71,7 @@ WHERE
     gender IS NULL OR age IS NULL OR category IS NULL OR 
     quantity IS NULL OR price_per_unit IS NULL OR cogs IS NULL;
 ```
+### 3. Análise de dados e resultados
+Foram definidas 10 perguntas específicas de negócios, visando extrair insights acerca dos dados:
+
+- 01. Qual o número de transações realizadas no dia 24/11/2022 (Véspera de Natal) ?
