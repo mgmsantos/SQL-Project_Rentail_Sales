@@ -48,15 +48,14 @@ CREATE TABLE retail_sales
 ```
 ### 2. Exploração e limpeza dos dados
 ```sql
-SELECT
-    COUNT(*)
+SELECT COUNT(*)
 FROM retail_sales; -- obter a contagem de registros
 
-SELECT
-    COUNT(DISTINCT customer_id)
+SELECT COUNT(DISTINCT customer_id)
 FROM retail_sales; -- obter a contagem de clientes unicos
 
-SELECT DISTINCT category FROM retail_sales; -- obter a contagem de categorias unicas
+SELECT DISTINCT category
+FROM retail_sales; -- obter a contagem de categorias unicas
 
 SELECT *
 FROM retail_sales
