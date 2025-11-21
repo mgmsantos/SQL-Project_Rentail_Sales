@@ -1,8 +1,8 @@
-# 📊 SQL - Projeto de Análise de Vendas
+# SQL - Projeto de Análise de Vendas
 
 Este projeto demonstra a aplicação robusta de SQL para transformar dados brutos de transações de varejo em insights estratégicos. Utilizando um conjunto de dados de vendas, o trabalho foca na limpeza, exploração e análise avançada para solucionar desafios de negócio. Os objetivos específicos incluem: avaliar o desempenho das vendas por categoria, identificar clientes de maior valor e mapear o comportamento de compra ao longo do tempo (incluindo picos de venda e segmentação horária). O resultado é uma série de consultas SQL complexas que fornecem uma base sólida para a tomada de decisões em otimização de estoque, campanhas de marketing e planejamento operacional.
 
-## 🎯 Objetivos do Projeto
+## Objetivos do Projeto
 O objetivo principal deste projeto foi aplicar habilidades em SQL para:
 
 Limpar e Preparar os Dados: Garantir a integridade dos dados, identificando e tratando valores nulos.
@@ -11,7 +11,7 @@ Explorar os Dados (EDA): Entender a estrutura do conjunto de dados, o número de
 
 Resolver Questões de Negócio: Responder a perguntas específicas de negócio por meio de consultas SQL complexas, como agregação, window functions e CTEs (Common Table Expressions).
 
-## 📂 Estrutura do Conjunto de Dados
+## Estrutura do Conjunto de Dados
 O conjunto de dados retail_sales contém informações detalhadas sobre cada transação de venda. A tabela foi criada com a seguinte estrutura:
 | Coluna | Tipo de Dado | Descrição |
 | :--- | :--- | :--- |
@@ -196,15 +196,15 @@ GROUP BY shift;
 ```
 ## Principais resultados e Insights
 - Desempenho por categoria:
---As categorias 'Eletrônicos' e 'Vestuário' lideram, com cerca de 34.4% e 34.1% no total de vendas, respectivamente, seguido por 'Beleza' que possui 31.5%
+  - As categorias 'Eletrônicos' e 'Vestuário' lideram, com cerca de 34.4% e 34.1% no total de vendas, respectivamente, seguido por 'Beleza' que possui 31.5%
 - Idade média dos clientes:
-  Os clientes possuem idade média de 40.4 anos, sendo que os homens apresentam uma média de 41.4 e as mulheres de 41.3 anos.
+  - Os clientes possuem idade média de 40.4 anos, sendo que os homens apresentam uma média de 41.4 e as mulheres de 41.3 anos.
 - Melhor mês de venda:
-  No ano de 2022, o melhor mês de venda foi Julho, com uma média de 541 vendas, e no ano de 2023, correspondeu a Fevereiro, com uma média de vendas equivalente a 535.
+  - No ano de 2022, o melhor mês de venda foi Julho, com uma média de 541 vendas, e no ano de 2023, correspondeu a Fevereiro, com uma média de vendas equivalente a 535.
 - Top 5 clientes:
-  Os clientes situados no Top 5 de vendas geraram 16.3% do total de vendas. Uma boa estratégia consiste em alocar esses clientes em programas de fidelidade e ofertas personalizadas.
+  - Os clientes situados no Top 5 de vendas geraram 16.3% do total de vendas. Uma boa estratégia consiste em alocar esses clientes em programas de fidelidade e ofertas personalizadas.
 - Ocorrência de transações por turno:
-  Os dados revelam que durante a noite é o período que mais acontece transações e, com isso, deve-se ajustar a força de trabalho da equipe para atender a demanda máxima nesses horários.
+  - Os dados revelam que durante a noite é o período que mais acontece transações e, com isso, deve-se ajustar a força de trabalho da equipe para atender a demanda máxima nesses horários.
 ## Conclusão
 Esse projeto demonstrou proficiência na manipulação e análise de dados com linguagem SQL, fornecendo insights estratégicos para otimizar pperações em vendas de varejo, assim como conhecer o comportamento do próprio negócio de trabalho. As principais soluções atendidas por esse projeto foram:
 - Construção do conjunto de dados e validaçãó para integridade dos dados;
