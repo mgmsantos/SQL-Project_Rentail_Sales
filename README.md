@@ -206,7 +206,7 @@ GROUP BY shift;
 - **Ocorrência de transações por turno:**
 	- Os dados revelam que durante a noite é o período que mais acontece transações e, com isso, deve-se ajustar a força de trabalho da equipe para atender a demanda máxima nesses horários.
 ## Conclusão
-Esse projeto demonstrou proficiência na manipulação e análise de dados com linguagem SQL, fornecendo insights estratégicos para otimizar pperações em vendas de varejo, assim como conhecer o comportamento do próprio negócio de trabalho. As principais soluções atendidas por esse projeto foram:
-- Construção do conjunto de dados e validaçãó para integridade dos dados;
+Esse projeto demonstrou proficiência na manipulação e análise de dados com linguagem SQL, fornecendo insights estratégicos para otimizar operações em vendas de varejo, assim como conhecer o comportamento do próprio negócio de trabalho. As principais soluções atendidas por esse projeto foram:
+- Construção do conjunto de dados e validação para integridade dos dados;
 - Identificação de segmentos de clientes que geram maior valor;
 - Mapeamento de sazonalidades de vendas e picos de demanda
