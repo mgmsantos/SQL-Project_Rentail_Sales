@@ -71,7 +71,7 @@ WHERE
     gender IS NULL OR age IS NULL OR category IS NULL OR 
     quantity IS NULL OR price_per_unit IS NULL OR cogs IS NULL;
 ```
-### 3. Análise de dados e resultados
+### 3. Análise de dados
 Foram definidas 10 perguntas específicas de negócios, visando extrair insights acerca dos dados:
 
 - Quais transações foram realizadas no dia 24/11/2022 (Véspera de Natal) ?
@@ -98,7 +98,8 @@ WHERE
 SELECT
 	category,
 	SUM(total_sale) AS total_sale,
-	COUNT(*) AS total_order
+	COUNT(*) AS total_order,
+	ROUND((SUM(total_sale)::numeric / (SELECT SUM(total_sale)::numeric FROM retail_sales) * 100), 2) AS percentage
 FROM retail_sales
 GROUP BY category;
 ```
@@ -193,4 +194,6 @@ SELECT
 FROM hourly_sales
 GROUP BY shift;
 ```
-  
+## Principais resultados e Insights
+- Desempenho por categoria:
+--As categorias 'Eletrônicos' e 'Vestuário' lideram, com cerca de 34.4% e 34.1% no total de vendas, respectivamente, seguido por 'Beleza' que possui 31.5%
