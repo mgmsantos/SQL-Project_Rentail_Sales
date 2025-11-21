@@ -195,15 +195,15 @@ FROM hourly_sales
 GROUP BY shift;
 ```
 ## Principais resultados e Insights
-- Desempenho por categoria:
+- **Desempenho por categoria:**
 	- As categorias 'Eletrônicos' e 'Vestuário' lideram, com cerca de 34.4% e 34.1% no total de vendas, respectivamente, seguido por 'Beleza' que possui 31.5%
-- Idade média dos clientes:
+- **Idade média dos clientes:**
 	- Os clientes possuem idade média de 40.4 anos, sendo que os homens apresentam uma média de 41.4 e as mulheres de 41.3 anos.
-- Melhor mês de venda:
+- **Melhor mês de venda:**
 	- No ano de 2022, o melhor mês de venda foi Julho, com uma média de 541 vendas, e no ano de 2023, correspondeu a Fevereiro, com uma média de vendas equivalente a 535.
-- Top 5 clientes:
+- **Top 5 clientes:**
 	- Os clientes situados no Top 5 de vendas geraram 16.3% do total de vendas. Uma boa estratégia consiste em alocar esses clientes em programas de fidelidade e ofertas personalizadas.
-- Ocorrência de transações por turno:
+- **Ocorrência de transações por turno:**
 	- Os dados revelam que durante a noite é o período que mais acontece transações e, com isso, deve-se ajustar a força de trabalho da equipe para atender a demanda máxima nesses horários.
 ## Conclusão
 Esse projeto demonstrou proficiência na manipulação e análise de dados com linguagem SQL, fornecendo insights estratégicos para otimizar pperações em vendas de varejo, assim como conhecer o comportamento do próprio negócio de trabalho. As principais soluções atendidas por esse projeto foram:
