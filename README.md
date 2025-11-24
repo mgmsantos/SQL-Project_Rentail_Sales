@@ -1,7 +1,5 @@
 # SQL - Análise de Vendas
-
 ---
-
 ## Visão Geral do Projeto
 
 Este projeto demonstra a aplicação de SQL para transformar dados brutos de transações de varejo em insights estratégicos. Utilizando um conjunto de dados de vendas, o trabalho foca na limpeza, exploração e análise avançada para solucionar desafios de negócio. Os objetivos específicos incluem: avaliar o desempenho das vendas por categoria, identificar clientes de maior valor e mapear o comportamento de compra ao longo do tempo (incluindo picos de venda e segmentação horária). O resultado é uma série de consultas SQL complexas que fornecem uma base sólida para a tomada de decisões em otimização de estoque, campanhas de marketing e planejamento operacional.
