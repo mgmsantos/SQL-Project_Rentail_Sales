@@ -1,5 +1,5 @@
 # SQL - Análise de Vendas
----
+
 ## Visão Geral do Projeto
 
 Este projeto demonstra a aplicação de SQL para transformar dados brutos de transações de varejo em insights estratégicos. Utilizando um conjunto de dados de vendas, o trabalho foca na limpeza, exploração e análise avançada para solucionar desafios de negócio. Os objetivos específicos incluem: avaliar o desempenho das vendas por categoria, identificar clientes de maior valor e mapear o comportamento de compra ao longo do tempo (incluindo picos de venda e segmentação horária). O resultado é uma série de consultas SQL complexas que fornecem uma base sólida para a tomada de decisões em otimização de estoque, campanhas de marketing e planejamento operacional.
@@ -7,6 +7,7 @@ Este projeto demonstra a aplicação de SQL para transformar dados brutos de tra
 ---
 
 ## Objetivos do Projeto
+
 O objetivo principal deste projeto foi aplicar habilidades em SQL para:
 
 Limpar e Preparar os Dados: Garantir a integridade dos dados, identificando e tratando valores nulos.
@@ -201,7 +202,11 @@ SELECT
 FROM hourly_sales
 GROUP BY shift;
 ```
+
+---
+
 ## Principais resultados e Insights
+
 - **Desempenho por categoria:**
 	- As categorias 'Eletrônicos' e 'Vestuário' lideram, com cerca de 34.4% e 34.1% no total de vendas, respectivamente, seguido por 'Beleza' que possui 31.5%
 - **Idade média dos clientes:**
@@ -212,8 +217,14 @@ GROUP BY shift;
 	- Os clientes situados no Top 5 de vendas geraram 16.3% do total de vendas. Uma boa estratégia consiste em alocar esses clientes em programas de fidelidade e ofertas personalizadas.
 - **Ocorrência de transações por turno:**
 	- Os dados revelam que durante a noite é o período que mais acontece transações e, com isso, deve-se ajustar a força de trabalho da equipe para atender a demanda máxima nesses horários.
+
+---
+
 ## Conclusão
+
 Esse projeto demonstrou proficiência na manipulação e análise de dados com linguagem SQL, fornecendo insights estratégicos para otimizar operações em vendas de varejo, assim como conhecer o comportamento do próprio negócio de trabalho. As principais soluções atendidas por esse projeto foram:
 - Construção do conjunto de dados e validação para integridade dos dados;
 - Identificação de segmentos de clientes que geram maior valor;
 - Mapeamento de sazonalidades de vendas e picos de demanda
+
+---
