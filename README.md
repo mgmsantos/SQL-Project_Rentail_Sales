@@ -239,6 +239,7 @@ Esse projeto demonstrou proficiência na manipulação e análise de dados com l
   <a href="http://lattes.cnpq.br/2943203054995050" target="_blank"><img src="https://img.shields.io/badge/-Lattes-%230077B5?style=for-the-badge&logo=google-scholar&logoColor=white" target="_blank"></a>
 </div>
 
+
 Sinta-se à vontade para *favoritar* esse repositório com uma estrela e promor melhorias, abrir *issues* ou enviar *pull requests*!
 
 ---
